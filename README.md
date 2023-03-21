@@ -1,6 +1,6 @@
 # Web-Scrapping using Beautifulsoup
 
-Projek ini dikembangkan sebagai salah satu capstone project dari Algoritma Academy Data Analytics Specialization. Deliverables yang diharapkan dari projek ini adalah melakukan simple webscrapping untuk mendapatkan informasi. Untuk step by step guide, Bapak Ibu dipersilahkan untuk membuka git saya [Click here](https://github.com/t3981-h/Webscrapping-with-BeautifulSoup "Webscrapping with Beautiful Soup"). Kita juga akan memanfaatkan flask dashboard sederhana untuk menampilkan hasil scrap dan visualisasi kita.
+This project was developed as one of the capstone projects of the Algorithm Academy Data Analytics Specialization. The expected deliverables from this project are to do a simple web scraping to get information. I'll also make use of a simple flask dashboard to display my scrap results and visualizations.
 
 ## Dependencies
 
@@ -9,62 +9,55 @@ Projek ini dikembangkan sebagai salah satu capstone project dari Algoritma Acade
 - flask
 - matplotlib
 
-Atau Bapak Ibu cukup menginstall requirements.txt dengan cara berikut
-
-```python
-pip install -r requirements.txt
-```
 
 ## Rubics
 
-- Environment preparation (2 points)
-- Finding the right key to scrap the data  & Extracting the right information (5 points)
-- Creating data frame & Data wrangling (5 points)
-- Creating a tidy python notebook as a report. (2 points)
-- Implement it on flask dashboard (2 points)
+- Environment preparation. 
+- Finding the right key to scrap the data  & Extracting the right information.
+- Creating data frame & Data wrangling. 
+- Creating a tidy python notebook as a report. 
+- Implement it on flask dashboard.
 
 
 ## What You Need to Do
 
-* Silahkan mencoba melakukan scraping soal di bawah menggunakan `beautiful soup` di notebook Bapak/Ibu terlebih dahulu.
-* Bapak/Ibu dapat men-clone repo ini.
-* Silahkan buka notebook template pada capstone ini dan isi sesuai dengan arahan yang ada. Pastikan Bapak/Ibu memberikan analisa yang dibutuhkan pada notebook tersebut.
-* File di repo ini adalah skeleton yang dapat digunakan untuk membuat flask dashboard sederhana.
-* Silahkan isi di bagian yang masih kosong.
-* Isi fungsi `scrap` dengan proses scraping yang sudah Bapak/Ibu lakukan di notebook. 
+* Please try scraping the questions below using `beautiful soup` in your notebook first.
+* You can clone this repo.
+* Please open the notebook template on this capstone and fill it according to the instructions. Make sure you provide the required analysis on the notebook.
+* The files in this repo are skeletons which can be used to build a simple flask dashboard.
+* Please fill in the blanks.
+* Fill in the `scrap` function with the scraping process that you have done in your notebook.
 
 ```python
 table = soup.find(___)
 tr = table.find_all(___)
 ```
 
-* Isi bagian ini untuk menyimpan hasil scrap yang Bapak/Ibu buat menjadi sebuah dataframe.
+* Fill in this section to save the results of the scrap that you made into a dataframe.
 
 ```python
 df = pd.DataFrame(name of your tupple, columns = (name of the columns))
 ```
 
-* Terakhir Bapak/Ibu dapat menggunakan fungsi `scrap` dengan cara mengisi bagian berikut dengan link web yang Bapak/Ibu scrap.
+* Finally, you can use the `scrap` function by filling in the following section with the web link that you scraped.
 
 ```python
 df = scrap(___) #insert url here
 ```
 
-* Bapak/Ibu juga dapat bermain dengan UI nya pada `index.html` yang dimana Bapak/Ibu dapat mengikuti comment yang ada untuk mengetahui bagian mana yang dapat diubah. 
-
 ### The Final Mission
 
-Pada captsone kali ini, Bapak Ibu bisa memilih salah satu soal ini untuk dikerjakan.
+In capstone project , you can choose one of these questions to work on:
 
-1. Data kurs US Dollar ke rupiah dari `https://www.exchange-rates.org/history/IDR/USD/T`
+1. US Dollar exchange rate data to IDR (Indonesian Rupiah) from `https://www.exchange-rates.org/history/IDR/USD/T`
 
-    * Dari halaman tersebut carilah `harga harian`, dan `tanggal`
-    * Bualah plot pergerakan kurs USD 
+    * From that page search for `daily price`, and `date`
+    * Create a plot of the movement of the USD exchange rate
     
-2. Data film yang rilis di tahun 2019 dari `imdb.com/search/title/?release_date=2019-01-01,2019-12-31`
+2. Film data released in 2019 from `imdb.com/search/title/?release_date=2019-01-01,2019-12-31`
 
-    * Dari Halaman tersebut carilah `judul` , `imdb rating` , `metascore`, dan `votes`
-    * Buatlah plot dari 7 film paling populer di tahun 2019.
+    * From the Page search for `title` , `imdb rating` , `metascore` and `votes`
+    * Make plots of the 7 most popular films of 2019.
 
 
 Happy learning! 
