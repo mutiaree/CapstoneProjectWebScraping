@@ -1,6 +1,6 @@
 # Web-Scrapping using Beautifulsoup
 
-Web scrapping is one of a method that we can use to colleting the data from internet. In this project, we will try to scrap Indonesian exchanged rate from www.exchange-rates.org. To do this we will only use a couple default library from python and BeautifulSoup.
+Web scrapping is one of a method that we can use to collecting the data from internet. In this project, we will try to scrap Indonesian exchanged rate from www.exchange-rates.org. To do this we will only use a couple default library from python and BeautifulSoup.
 
 ## Dependencies
 
