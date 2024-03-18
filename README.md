@@ -1,6 +1,6 @@
 # Web-Scrapping using Beautifulsoup
 
-This project was developed as one of the capstone projects of the Algorithm Academy Data Analytics Specialization. The expected deliverables from this project are to do a simple web scraping to get information. I'll also make use of a simple flask dashboard to display my scrap results and visualizations.
+Web scrapping is one of a method that we can use to colleting the data from internet. In this project, we will try to scrap Indonesian exchanged rate from www.exchange-rates.org. To do this we will only use a couple default library from python and BeautifulSoup.
 
 ## Dependencies
 
